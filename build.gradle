@@ -12,6 +12,10 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
     testImplementation 'org.mockito:mockito-junit-jupiter:4.9.0'
+    // Junit 5 test extension allowing to do tests on exit codes (with System.exit calls)
+    // It uses a SecurityManager, deprecated since Java 17, to prevent exit of the process run,
+    // which can be done only from a SecurityManager, at least for now
+    testImplementation 'com.ginsberg:junit5-system-exit:1.1.2'
 }
 
 test {
