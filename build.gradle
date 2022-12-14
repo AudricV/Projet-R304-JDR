@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.opencsv:opencsv:5.7.1'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
     testImplementation 'org.mockito:mockito-junit-jupiter:4.9.0'
     // Junit 5 test extension allowing to do tests on exit codes (with System.exit calls)
