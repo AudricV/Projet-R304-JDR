@@ -1,30 +1,26 @@
 package fr.univ_amu.iut;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
 import java.io.PrintStream;
 
-import static org.mockito.Mockito.verify;
 import static org.mockito.MockitoAnnotations.openMocks;
 
 /**
- * Basic test to test configuration
+ * Base test to test classes, which set up the system output mocking.
+ *
+ * <p>
+ * Test classes which require system outputs should extend this class.
+ * </p>
  */
 class BasicTest {
     @Mock
-    private PrintStream systemOutput;
+    protected PrintStream systemOutput;
 
     @BeforeEach
     public void setUpApp() throws Exception {
         openMocks(this).close();
         System.setOut(systemOutput);
-    }
-
-    @Test
-    void assertSystemOutputCheckWorks() {
-        System.out.println("Hello");
-        verify(System.out).println("Hello");
     }
 }
