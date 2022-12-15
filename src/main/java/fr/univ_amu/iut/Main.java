@@ -40,6 +40,13 @@ public class Main {
         checkRequiredArguments(mapArgs);
 
         System.out.println(CSV_LOAD_TITLE);
+
+        final CsvLoader csvLoader = new CsvLoader();
+        csvLoader.parseCsvs(mapArgs);
+
+        System.out.println(CSV_LOAD_TITLE_COMPLETE);
+
+        // CSV files parsed, launching the game
     }
 
     /**
@@ -63,15 +70,15 @@ public class Main {
      */
     private static void checkRequiredArguments(final Map<String, String> mapArgs) {
         if (!mapArgs.containsKey(CSV_CHARACTER_ARG_NAME)) {
-            showMissingFileArgValueMessageAndExit("personnages");
+            showMissingFileArgValueMessageAndExit(CHARACTERS);
         }
 
         if (!mapArgs.containsKey(CSV_EVENTS_ARG_NAME)) {
-            showMissingFileArgValueMessageAndExit("évènements");
+            showMissingFileArgValueMessageAndExit(EVENTS);
         }
 
         if (!mapArgs.containsKey(CSV_ITEMS_ARG_NAME)) {
-            showMissingFileArgValueMessageAndExit("items");
+            showMissingFileArgValueMessageAndExit(ITEMS);
         }
     }
 }
