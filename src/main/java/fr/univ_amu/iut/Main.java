@@ -47,6 +47,13 @@ public class Main {
         System.out.println(CSV_LOAD_TITLE_COMPLETE);
 
         // CSV files parsed, launching the game
+        final GameManager gameManager = new GameManager(csvLoader.getEvents(),
+                csvLoader.getCharacters());
+        gameManager.chooseClass();
+        gameManager.chooseName();
+        gameManager.adventure();
+
+        gameManager.combat();
     }
 
     /**

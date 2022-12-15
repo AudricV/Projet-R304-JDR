@@ -2,6 +2,10 @@ package fr.univ_amu.iut.event;
 
 import com.opencsv.bean.*;
 
+
+/**
+ * A game event.
+ */
 // Suppress unused warnings, as setters are not used in the project but used by OpenCSV
 @SuppressWarnings("unused")
 public class Event {
