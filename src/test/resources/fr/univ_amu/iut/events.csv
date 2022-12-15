@@ -1,0 +1,26 @@
+TYPE;NAME;TEXT EVENT
+Adventure;Cave;You enter a wet and dark cave…
+Adventure;Grassland;You peacefully walk in a giant wonderful grassland…
+Adventure;Tower;You enter a big and resonant place where you can’t see your feet…  
+Adventure;Ravine;You enter a very narrow place… 
+Adventure;Castle;You face an imposing castle…
+Fight;Goblin;Suddenly an angry Goblin appears!
+Fight;Skeleton;Suddenly a sinister skeleton walks in front of you!
+Fight;Blob;A weird liquid is moving to you. It’s a blob!
+Fight;Ghost;A phosphorus mass takes shape in front of you. It’s a ghost!
+Fight;Bandit;You feel watched when suddenly a bandit appears behind you!
+Boss_Fight;Bandit’s Master;The mighty and legendary Bandit’s Master stands before you, you feel determined to defeat him!
+Boss_Fight;Vampire;A dark aura hangs over the place, a bunch of bats fly above you and gather in front of you to form a human body. The Vampire of Old Tales is facing you!
+Boss_Fight;Dragon;You see a huge pile of gold and precious stones lining the room. You feel an immense desire to recover as much gold as possible when suddenly, the tremendous Dragon, lord of these lands stands before you. Despite the presence of your opponent you are ready to fight!
+Boss_Fight;Necromancer;As you walk slowly towards your destination, you feel a sudden change in the area. Life seems to wither slowly, the sky begins to darken, that’s when you see it, the ambassador of Death in person, the Necromancer. As your eyes cross you feel a thrill running through you, it’s time to send it back to hell!
+Interaction;Mage;Do you want to exchange 20 gold for 12 points of life ?
+Interaction;Mage;Do you want to exchange 32 gold for 2 points of armor ?
+Interaction;Mage;Do you want to exchange 48 gold for 2 points of strength ?
+Interaction;Marchand;Hey you! This armor will give you 1 point of armor for only 16 gold! 
+Interaction;Marchand;Hey you! This sword will give you 1 point of strength for only 24 gold!
+Interaction;Marchand;Hey you! I can sell you a potion for only 10 gold!
+Interaction;Marchand;Hey you! I can sell you a bomb for only 15 gold!
+Interaction;Marchand;Hey you! This artifact will give you 10 points of health for only 30 gold!
+Interaction;Loot;Congratulations you found a shiny sharpy sword!
+Interaction;Loot;Congratulations you found a shiny resistant armor!
+Interaction;Loot;Congratulations you found a purse of gold!
