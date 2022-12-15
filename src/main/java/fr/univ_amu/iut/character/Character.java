@@ -17,6 +17,8 @@ public class Character {
     private int defense;
     @CsvBindByName(required = true, column = "STR")
     private int strength;
+    @CsvBindByName(required = true, column = "XP")
+    private int xp;
     @CsvBindByName(required = true, column = "GOLD")
     private int goldAmount;
     @CsvBindByName(column = "ITEMS")
@@ -75,6 +77,14 @@ public class Character {
         this.strength = strength;
     }
 
+    public int getXp() {
+        return xp;
+    }
+
+    public void setXp(int xp) {
+        this.xp = xp;
+    }
+
     public int getGoldAmount() {
         return goldAmount;
     }
@@ -108,6 +118,7 @@ public class Character {
                 ", healthPoints=" + healthPoints +
                 ", defense=" + defense +
                 ", strength=" + strength +
+                ", xp=" + xp +
                 ", goldAmount=" + goldAmount +
                 ", items=" + items +
                 ", powers=" + powers +
