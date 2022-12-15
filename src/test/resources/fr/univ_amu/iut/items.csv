@@ -1,0 +1,14 @@
+TYPE;NAME;TARGET;DESCRIPTION;EFFECT TYPE;EFFECT OPERATION
+INSTANT_EFFECT_OBJECT;Shiny sword;you;“A shiny sharpy sword !”;Strength;+1
+INSTANT_EFFECT_OBJECT;Shiny resistant armor;you;“A shiny resistant armor !”;Defense;+1
+INSTANT_EFFECT_OBJECT;Purse of gold;you;“A purse with an amount of gold in it !”;Gold;+rand(20,40)
+PORTABLE_OBJECT;Potion;you;“A heal potion, restore 10 HP !”;HP;+10
+PORTABLE_OBJECT;Bomb;enemy;“A deadly bomb that deals 10 damage to an enemy !;HP;-10
+POWER;Heal;you;“Heal an amount of HP between 3 and 10 !”;HP;+rand(3,10)
+POWER;Fire;enemy;“Deals 5 damage to an enemy !”;HP;-5
+POWER;Dark magic;enemy;“Deals 8 damage to an enemy !”;HP;-8
+POWER;Curse;enemy;“Reduces your enemy’s Strength by 3 !”;Strength;-3
+POWER;Ice;enemy;“Deals 3 damage to an enemy !”;HP;-3
+POWER;Attack;enemy;“Attack your enemy !”;HP;-(Your Str - Enemy’s Def)
+POWER;Sneak attack;enemy;“Attack sneakily on your enemy !”;HP;-(Your Str - Enemy’s Def)
+POWER;Dragon claw;enemy;“Crush your enemies with your claws !”;HP;-(3 + Your Str - Enemy’s Def)

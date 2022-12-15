@@ -1,0 +1,13 @@
+TYPE;NAME;LVL;HP;DEF;STR;XP;GOLD;ITEMS;POWERS
+Mage;;1;8;3;3;0;20;;Attack,Heal,Ice
+Soldier;;1;12;5;4;0;10;potion;Attack,Guard
+Thief;;1;10;4;4;0;5;;Attack,Steal
+Monster;Goblin;1;5;0;3;10;15;;Attack
+Monster;Skeleton;1;4;2;5;20;10;;Attack,Guard
+Monster;Ghost;3;10;3;2;35;0;;Attack,Curse
+Monster;Bandit;3;10;2;4;25;30;potion,bomb;Attack,Steal
+Monster;Blob;2;11;1;1;20;20;;Attack,Ice
+Boss;Bandit’s Master;5;35;4;4;70;300;potion,potion,bomb;Sneak Attack,Steal
+Boss;Vampire;6;30;5;6;75;150;bomb;Attack,Vampire bite,Guard
+Boss;Dragon;8;50;8;8;100;200;;Dragon claw,Fire breath
+Boss;Necromancer;6;40;4;4;80;150;potion, potion;Attack,heal,Dark magic,Curse
