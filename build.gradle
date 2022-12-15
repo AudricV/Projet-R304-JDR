@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'fr.univ-amu.iut'
+group 'fr.univ_amu.iut'
 version '0.0.1'
 
 repositories {
@@ -17,6 +17,12 @@ dependencies {
     // It uses a SecurityManager, deprecated since Java 17, to prevent exit of the process run,
     // which can be done only from a SecurityManager, at least for now
     testImplementation 'com.ginsberg:junit5-system-exit:1.1.2'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'fr.univ_amu.iut.Main'
+    }
 }
 
 test {
