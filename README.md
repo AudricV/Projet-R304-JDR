@@ -17,6 +17,10 @@ Pour lancer le jeu, vous devez lancer la méthode statique `main(String[])` de l
 
 Si vous utilisez un IDE comme Intellij IDEA, il vous faudra rajouter les arguments à la configuration de l'exécution de la classe principale pour que vous puissiez jouer.
 
+### Fichiers d'exemples
+
+Vous trouverez des fichiers CSV d'exemples dans les ressources de tests du jeu.
+
 ### Fonctionnalités non implémentées
 
 - boss final
