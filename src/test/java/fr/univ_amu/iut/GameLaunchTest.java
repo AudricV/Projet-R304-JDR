@@ -1,10 +1,11 @@
 package fr.univ_amu.iut;
 
-import com.ginsberg.junit.exit.*;
-import org.junit.jupiter.api.*;
+import com.ginsberg.junit.exit.ExpectSystemExitWithStatus;
+import org.junit.jupiter.api.Test;
 
 import static fr.univ_amu.iut.Messages.*;
-import static org.mockito.Mockito.*;
+import static fr.univ_amu.iut.TestUtils.getResourcePath;
+import static org.mockito.Mockito.verify;
 
 /**
  * Test to verify whether game is launched only when arguments are required.
@@ -55,10 +56,21 @@ class GameLaunchTest extends BasicTest {
 
     @Test
     void validArgsCountShouldNotShowErrorMessage() {
-        Main.main(new String[]{CSV_EVENTS_ARG_NAME, "events.csv",
-                CSV_CHARACTER_ARG_NAME, "characters.csv",
-                CSV_ITEMS_ARG_NAME, "items.csv"});
+        Main.main(new String[]{CSV_EVENTS_ARG_NAME, getResourcePath("events.csv"),
+                CSV_CHARACTER_ARG_NAME, getResourcePath("characters.csv"),
+                CSV_ITEMS_ARG_NAME, getResourcePath("items.csv")});
 
         verify(systemOutput).println(GAME_TITLE);
+    }
+
+    @Test
+    void validArgsAndFilesShouldLoadGame() {
+        Main.main(new String[]{CSV_EVENTS_ARG_NAME, getResourcePath("events.csv"),
+                CSV_CHARACTER_ARG_NAME, getResourcePath("characters.csv"),
+                CSV_ITEMS_ARG_NAME, getResourcePath("items.csv")});
+
+        verify(systemOutput).println(GAME_TITLE);
+        verify(systemOutput).println(CSV_LOAD_TITLE);
+        verify(systemOutput).println(CSV_LOAD_TITLE_COMPLETE);
     }
 }
