@@ -53,12 +53,12 @@ final class Messages {
     static final String WELCOME_GAME_START = "Welcome %s, you are about to experience an adventure as few live it...";
 
     // Fights
-    static final String FIGHTING_ENEMY = "You are facing the %s";
+    static final String FIGHTING_ENEMY = "You are facing the %s!\n";
     static final String ATTACKING_FIRST = "You are attacking first!";
     static final String ACTION_CHOICE = "Do you want to attack or heal? Enter your choice below:";
-    static final String PLAYER_ATTACKS_ENEMY = "%s attacks the %s!";
+    static final String PLAYER_ATTACKS_ENEMY = "%s attacks the %s!\n";
     static final String ENEMY_ATTACKS_YOU = "%s attacks you!";
-    static final String CHARACTER_DEALS_DAMAGE = "It deals %d damage(s)!";
+    static final String CHARACTER_DEALS_DAMAGE = "It deals %d damage(s)!\n";
     static final String PLAYER_HP_RECOVERED = "You recovered %d HP !";
     static final String PLAYER_WIN = "You win!";
     static final String PLAYER_WIN_GOLD = "You win %d gold !";
