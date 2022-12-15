@@ -2,6 +2,7 @@ package fr.univ_amu.iut;
 
 import java.util.*;
 
+import static fr.univ_amu.iut.ExitUtils.*;
 import static fr.univ_amu.iut.Messages.*;
 
 public class Main {
@@ -39,26 +40,18 @@ public class Main {
         checkRequiredArguments(mapArgs);
 
         System.out.println(CSV_LOAD_TITLE);
-    }
 
-    /**
-     * Show the help message of the game and stops its execution with an exit code 0.
-     */
-    private static void showHelp() {
-        System.out.println(HELP_CONTENT);
-        System.exit(0);
-    }
+        final CsvLoader csvLoader = new CsvLoader();
+        csvLoader.parseCsvs(mapArgs);
 
-    /**
-     * Stops the game's execution with an exit code 1.
-     */
-    private static void errorExit() {
-        System.exit(1);
+        System.out.println(CSV_LOAD_TITLE_COMPLETE);
+
+        // CSV files parsed, launching the game
     }
 
     /**
      * Show the missing argument message of a given file type and exit with an error code using
-     * {@link #errorExit()}.
+     * {@link ExitUtils#errorExit()}.
      *
      * @param argumentType a "human" file type argument, to be inserted as {@code ARGUMENT_TYPE} in
      *                     the following message:
@@ -77,15 +70,15 @@ public class Main {
      */
     private static void checkRequiredArguments(final Map<String, String> mapArgs) {
         if (!mapArgs.containsKey(CSV_CHARACTER_ARG_NAME)) {
-            showMissingFileArgValueMessageAndExit("personnages");
+            showMissingFileArgValueMessageAndExit(CHARACTERS);
         }
 
         if (!mapArgs.containsKey(CSV_EVENTS_ARG_NAME)) {
-            showMissingFileArgValueMessageAndExit("évènements");
+            showMissingFileArgValueMessageAndExit(EVENTS);
         }
 
         if (!mapArgs.containsKey(CSV_ITEMS_ARG_NAME)) {
-            showMissingFileArgValueMessageAndExit("items");
+            showMissingFileArgValueMessageAndExit(ITEMS);
         }
     }
 }
