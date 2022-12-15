@@ -13,7 +13,7 @@ Tout se fait avec des entrées au clavier.
 
 ### Lancer le jeu
 
-Pour lancer le jeu, vous devez lancer la méthode statique `main(String[])` de la classe `Main` passer les emplacements vers les trois fichiers CSV : regardez l'aide du programme (accessible en lançant le programme sans argument ou avec les arguments `-h` ou `--help`) pour plus de détails.
+Pour lancer le jeu, vous devez lancer la méthode statique `main(String[])` de la classe `Main` et passer les emplacements vers les trois fichiers CSV : regardez l'aide du programme (accessible en lançant le programme sans argument ou avec les arguments `-h` ou `--help`) pour plus de détails.
 
 Si vous utilisez un IDE comme Intellij IDEA, il vous faudra rajouter les arguments à la configuration de l'exécution de la classe principale pour que vous puissiez jouer.
 
